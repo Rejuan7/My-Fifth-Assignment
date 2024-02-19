@@ -17,7 +17,7 @@ function buyTicket(alpha) {
                                           <div>
                                                         <p>${seatPrice}</p>
                                           </div>
-                                          </div>
+                            </div>
                             `;
 
               const tempContainer = document.createElement('div');
@@ -82,12 +82,12 @@ function onClickApplyCoupon(){
               // })
              
               if(couponCode === couponCode1){
-                            document.getElementById('grand-total-price').innerHTML = totalPrice - 55;
+                            document.getElementById('grand-total-price').innerHTML = totalPrice - (totalPrice*15/100);
                             const couponCodeSection = document.getElementById('coupon-code-section');
                             couponCodeSection.classList.add('hidden');
               }
               else if(couponCode === couponCode2){
-                            document.getElementById('grand-total-price').innerHTML = totalPrice - 110;
+                            document.getElementById('grand-total-price').innerHTML = totalPrice - (totalPrice*15/100);
                             const couponCodeSection = document.getElementById('coupon-code-section');
                             couponCodeSection.classList.add('hidden');
 
