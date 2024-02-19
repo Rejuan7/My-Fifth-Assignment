@@ -87,7 +87,7 @@ function onClickApplyCoupon(){
                             couponCodeSection.classList.add('hidden');
               }
               else if(couponCode === couponCode2){
-                            document.getElementById('grand-total-price').innerHTML = totalPrice - (totalPrice*15/100);
+                            document.getElementById('grand-total-price').innerHTML = totalPrice - (totalPrice*20/100);
                             const couponCodeSection = document.getElementById('coupon-code-section');
                             couponCodeSection.classList.add('hidden');
 
