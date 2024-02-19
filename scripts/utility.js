@@ -112,6 +112,15 @@ nextBtn.addEventListener('click', function() {
     modal.showModal();
 });
 
+// reload page
+const closeButton = document.getElementById('continue');
+closeButton.addEventListener('click', function() {
+    location.reload();
+    
+    window.scrollTo(0, 0);
+});
+
+
 
 
 (function () {
